@@ -1,0 +1,12 @@
+diff --git a/src/cc/ns_guard.h b/src/cc/ns_guard.h
+index 65acd65..756b1f8 100644
+--- a/src/cc/ns_guard.h
++++ b/src/cc/ns_guard.h
+@@ -20,6 +20,7 @@
+ #include <memory>
+ 
+ #include "file_desc.h"
++#include <sys/types.h>
+ 
+ class ProcMountNSGuard;
+ 

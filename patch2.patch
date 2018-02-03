@@ -1,0 +1,19 @@
+diff --git a/tests/cc/test_c_api.cc b/tests/cc/test_c_api.cc
+index 7e5859f..0511448 100644
+--- a/tests/cc/test_c_api.cc
++++ b/tests/cc/test_c_api.cc
+@@ -149,10 +149,10 @@ static int mntns_func(void *arg) {
+     return -1;
+   }
+ 
+-  if (dlinfo(dlhdl, RTLD_DI_ORIGIN, &libpath) < 0) {
+-    fprintf(stderr, "Unable to find origin of libz.so.1: %s\n", dlerror());
+-    return -1;
+-  }
++  // if (dlinfo(dlhdl, RTLD_DI_ORIGIN, &libpath) < 0) {
++  //  fprintf(stderr, "Unable to find origin of libz.so.1: %s\n", dlerror());
++  //  return -1;
++  // }
+ 
+   dlclose(dlhdl);
+   dlhdl = NULL;
