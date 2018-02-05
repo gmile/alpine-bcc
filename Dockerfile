@@ -21,9 +21,6 @@ RUN ln -s /usr/lib/cmake/llvm5/ /usr/lib/cmake/llvm; \
     ln -s /usr/include/llvm5/llvm-c/ /usr/include/llvm-c; \
     ln -s /usr/include/llvm5/llvm/ /usr/include/llvm
 
-# vi /bcc/src/cc/ns_guard.h
-# vi /bcc/tests/cc/test_c_api.cc
-
 RUN git clone https://github.com/iovisor/bcc.git
 
 ADD patch1.patch /bcc
